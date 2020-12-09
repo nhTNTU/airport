@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>AirPortDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{a54f258b-aab8-435e-abd5-48a4a10dba8f}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>AirPortDB</RootNamespace>
+    <AssemblyName>AirPortDB</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Security\NotInBuild" />
+    <Folder Include="Security\Build" />
+    <Folder Include="Security\Build\Role" />
+    <Folder Include="Security\Build\Login" />
+    <Folder Include="Security\Build\User" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Aircompany.sql" />
+    <Build Include="dbo\Tables\AirPort.sql" />
+    <Build Include="dbo\Tables\Buyer.sql" />
+    <Build Include="dbo\Tables\City.sql" />
+    <Build Include="dbo\Tables\Country.sql" />
+    <Build Include="dbo\Tables\DocType.sql" />
+    <Build Include="dbo\Tables\Event.sql" />
+    <Build Include="dbo\Tables\Flight.sql" />
+    <Build Include="dbo\Tables\Passenger.sql" />
+    <Build Include="dbo\Tables\Payment.sql" />
+    <Build Include="dbo\Tables\Plane.sql" />
+    <Build Include="dbo\Tables\Ticket.sql" />
+    <Build Include="dbo\Tables\UnexpectedEvent.sql" />
+    <Build Include="dbo\Views\allCityCountry.sql" />
+    <Build Include="dbo\Views\FlightsAndEvents.sql" />
+    <Build Include="dbo\Views\UnexpEv.sql" />
+    <Build Include="dbo\Views\Buy.sql" />
+    <Build Include="dbo\Stored Procedures\AllCity.sql" />
+    <Build Include="dbo\Stored Procedures\FutureFlights.sql" />
+    <Build Include="dbo\Stored Procedures\FlightsByCity.sql" />
+    <Build Include="dbo\Stored Procedures\FlightsWithEvents.sql" />
+    <Build Include="dbo\Stored Procedures\UEvents.sql" />
+    <Build Include="dbo\Stored Procedures\PastFlights.sql" />
+    <Build Include="dbo\Stored Procedures\AircompWithPlanes.sql" />
+    <Build Include="dbo\Stored Procedures\FlightsByCountry.sql" />
+    <Build Include="dbo\Stored Procedures\CountTickets.sql" />
+    <Build Include="dbo\Stored Procedures\TotalCost.sql" />
+    <Build Include="dbo\Stored Procedures\Buyers.sql" />
+    <Build Include="dbo\Stored Procedures\Passeng.sql" />
+    <Build Include="dbo\Stored Procedures\AircompanySelect.sql" />
+    <Build Include="dbo\Stored Procedures\AirсompanyInsert.sql" />
+    <Build Include="dbo\Stored Procedures\AircompanyUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\AircompanyDelete.sql" />
+    <Build Include="dbo\Stored Procedures\CountryInsert.sql" />
+    <Build Include="dbo\Stored Procedures\CountryUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\CountryDelete.sql" />
+    <Build Include="dbo\Stored Procedures\GetCountry.sql" />
+    <Build Include="dbo\Stored Procedures\CountriesSelect.sql" />
+    <Build Include="dbo\Stored Procedures\RefCountriesSelect.sql" />
+    <Build Include="dbo\Stored Procedures\SelectCitiesList.sql" />
+    <Build Include="dbo\Stored Procedures\CityInsert.sql" />
+    <Build Include="dbo\Stored Procedures\CityUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\CityDelete.sql" />
+    <Build Include="dbo\Stored Procedures\GetCity.sql" />
+    <Build Include="dbo\Stored Procedures\SelectAirPortList.sql" />
+    <Build Include="dbo\Stored Procedures\SelectRefAirPortListByCity.sql" />
+    <Build Include="dbo\Stored Procedures\RefSelectCitiesListByID.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirPort.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteAirPort.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateAirPort.sql" />
+    <Build Include="dbo\Stored Procedures\InsertAirPort.sql" />
+    <Build Include="dbo\Stored Procedures\SelectAirplaneList.sql" />
+    <Build Include="dbo\Stored Procedures\SelectRefAircompaniesList.sql" />
+    <Build Include="dbo\Stored Procedures\GetPlane.sql" />
+    <Build Include="dbo\Stored Procedures\UpdatePlane.sql" />
+    <Build Include="dbo\Stored Procedures\InsertPlane.sql" />
+    <Build Include="dbo\Stored Procedures\DeletePlane.sql" />
+    <Build Include="dbo\Stored Procedures\SelectRefPlaneList.sql" />
+    <Build Include="dbo\Stored Procedures\GetFlight.sql" />
+    <Build Include="dbo\Stored Procedures\InsertFlight.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateFlight.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteFlight.sql" />
+    <Build Include="dbo\Stored Procedures\SelectFlights.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+    <Build Include="Security\Build\Role\AircompanyManager.sql" />
+    <Build Include="Security\Build\Role\Dispatchers.sql" />
+    <Build Include="Security\Build\Role\TopManagers.sql" />
+    <Build Include="Security\Build\Role\TicketBuyer.sql" />
+    <Build Include="Security\Build\Login\KrisDemyda.sql" />
+    <Build Include="Security\Build\Login\NazarHolub.sql" />
+    <Build Include="Security\Build\Login\RuslanVoityk.sql" />
+    <Build Include="Security\Build\Login\ViktorRikaluk.sql" />
+    <Build Include="Security\Build\Login\VovaVasilishin.sql" />
+    <Build Include="Security\Build\User\VovaVasilishin_1.sql" />
+    <Build Include="Security\Build\User\KrisDemyda_1.sql" />
+    <Build Include="Security\Build\User\NazarHolub_1.sql" />
+    <Build Include="Security\Build\User\RuslanVoityk_1.sql" />
+    <Build Include="Security\Build\User\ViktorRikaluk_1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Security\NotInBuild\Access.sql" />
+    <None Include="AirPortDB.publish.xml" />
+  </ItemGroup>
+</Project>

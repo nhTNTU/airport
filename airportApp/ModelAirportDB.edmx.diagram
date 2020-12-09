@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4b63fa4bb030491290fe5d59c20d727c" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="airportDBModel.Aircompany" Width="1.5" PointX="5.625" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.AirPort" Width="1.5" PointX="2.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.Buyer" Width="1.5" PointX="10.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.City" Width="1.5" PointX="0.5" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.Country" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.DocType" Width="1.5" PointX="10.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.Event" Width="1.5" PointX="4.375" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.Flight" Width="1.5" PointX="6.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.Passenger" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.Payment" Width="1.5" PointX="12.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.Plane" Width="1.5" PointX="4.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.Ticket" Width="1.5" PointX="8.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="airportDBModel.UnexpectedEvent" Width="1.5" PointX="2.5" PointY="0.5" IsExpanded="true" />
+        <AssociationConnector Association="airportDBModel.Flight_Aircompany_FK" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="airportDBModel.Plane_Aircompany_FK" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="airportDBModel.AirPort_City_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.Flight_AirPort_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.Buyer_Payment_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.Ticket_Buyer_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.City_Country_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.Passenger_DocType_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.Event_Flight_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.Flight_Plane_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.Ticket_Flight_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.UnexpectedEvent_Flight_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="airportDBModel.Ticket_Passenger_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

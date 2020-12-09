@@ -1,0 +1,128 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[AirPort]
+       [dbo].[Buyer]
+       [dbo].[City]
+       [dbo].[Country]
+       [dbo].[DocType]
+       [dbo].[Event]
+       [dbo].[Flight]
+       [dbo].[Passenger]
+       [dbo].[Payment]
+       [dbo].[Plane]
+       [dbo].[Ticket]
+       [dbo].[UnexpectedEvent]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[AirPort] (Table)
+       [dbo].[Buyer] (Table)
+       [dbo].[City] (Table)
+       [dbo].[Country] (Table)
+       [dbo].[DocType] (Table)
+       [dbo].[Event] (Table)
+       [dbo].[Flight] (Table)
+       [dbo].[Passenger] (Table)
+       [dbo].[Payment] (Table)
+       [dbo].[Plane] (Table)
+       [dbo].[Ticket] (Table)
+       [dbo].[UnexpectedEvent] (Table)
+     Refresh
+       [dbo].[DeleteAirPort] (Procedure)
+       [dbo].[GetAirPort] (Procedure)
+       [dbo].[InsertAirPort] (Procedure)
+       [dbo].[SelectAirPortList] (Procedure)
+       [dbo].[SelectFlights] (Procedure)
+       [dbo].[SelectRefAirPortListByCity] (Procedure)
+       [dbo].[UpdateAirPort] (Procedure)
+       [dbo].[CityDelete] (Procedure)
+       [dbo].[CityInsert] (Procedure)
+       [dbo].[CityUpdate] (Procedure)
+       [dbo].[GetCity] (Procedure)
+       [dbo].[RefSelectCitiesListByID] (Procedure)
+       [dbo].[SelectCitiesList] (Procedure)
+       [dbo].[CountriesSelect] (Procedure)
+       [dbo].[CountryDelete] (Procedure)
+       [dbo].[CountryInsert] (Procedure)
+       [dbo].[CountryUpdate] (Procedure)
+       [dbo].[GetCountry] (Procedure)
+       [dbo].[RefCountriesSelect] (Procedure)
+       [dbo].[DeleteFlight] (Procedure)
+       [dbo].[GetFlight] (Procedure)
+       [dbo].[InsertFlight] (Procedure)
+       [dbo].[UpdateFlight] (Procedure)
+       [dbo].[DeletePlane] (Procedure)
+       [dbo].[GetPlane] (Procedure)
+       [dbo].[InsertPlane] (Procedure)
+       [dbo].[SelectAirplaneList] (Procedure)
+       [dbo].[SelectRefPlaneList] (Procedure)
+       [dbo].[UpdatePlane] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[AirPort_City_FK] (Foreign Key)
+       [dbo].[Flight_AirPort_FK] (Foreign Key)
+       [dbo].[Buyer_Payment_FK] (Foreign Key)
+       [dbo].[Ticket_Buyer_FK] (Foreign Key)
+       [dbo].[City_Country_FK] (Foreign Key)
+       [dbo].[Passenger_DocType_FK] (Foreign Key)
+       [dbo].[Event_Flight_FK] (Foreign Key)
+       [dbo].[Flight_Aircompany_FK] (Foreign Key)
+       [dbo].[Flight_Plane_FK] (Foreign Key)
+       [dbo].[Ticket_Flight_FK] (Foreign Key)
+       [dbo].[UnexpectedEvent_Flight_FK] (Foreign Key)
+       [dbo].[Ticket_Passenger_FK] (Foreign Key)
+       [dbo].[Plane_Aircompany_FK] (Foreign Key)
+     Create
+       [dbo].[AirPort_City_FK] (Foreign Key)
+       [dbo].[Flight_AirPort_FK] (Foreign Key)
+       [dbo].[Buyer_Payment_FK] (Foreign Key)
+       [dbo].[Ticket_Buyer_FK] (Foreign Key)
+       [dbo].[City_Country_FK] (Foreign Key)
+       [dbo].[Passenger_DocType_FK] (Foreign Key)
+       [dbo].[Event_Flight_FK] (Foreign Key)
+       [dbo].[Flight_Aircompany_FK] (Foreign Key)
+       [dbo].[Flight_Plane_FK] (Foreign Key)
+       [dbo].[Ticket_Flight_FK] (Foreign Key)
+       [dbo].[UnexpectedEvent_Flight_FK] (Foreign Key)
+       [dbo].[Ticket_Passenger_FK] (Foreign Key)
+       [dbo].[Plane_Aircompany_FK] (Foreign Key)
+       [dbo].[NoMoreThanOneStartEvent] (Trigger)
+       [dbo].[NoMoreThanOneArrivalEvent] (Trigger)
+       [dbo].[NoArriveWithoutStart] (Trigger)
+       [dbo].[StartIsEarlierThanArrive] (Trigger)
+       [dbo].[StatusStart] (Trigger)
+       [dbo].[AutoArrived] (Trigger)
+       [dbo].[NoEventsIfCancelled] (Trigger)
+       [dbo].[AutoDateTimeArrival] (Trigger)
+       [dbo].[AutoAddPeriodicalFlights] (Trigger)
+       [dbo].[DocNumberMatchesToRE] (Trigger)
+       [dbo].[NoDelayOrCancellIfStarted] (Trigger)
+       [dbo].[DelayedOrCalcelled] (Trigger)
+     Refresh
+       [dbo].[FlightsAndEvents] (View)
+       [dbo].[UnexpEv] (View)
+       [dbo].[Buy] (View)
+       [dbo].[allCityCountry] (View)
+       [dbo].[FlightsByCity] (Procedure)
+       [dbo].[FlightsByCountry] (Procedure)
+       [dbo].[FlightsWithEvents] (Procedure)
+       [dbo].[FutureFlights] (Procedure)
+       [dbo].[Passeng] (Procedure)
+       [dbo].[PastFlights] (Procedure)
+       [dbo].[UEvents] (Procedure)
+       [dbo].[Buyers] (Procedure)
+       [dbo].[TotalCost] (Procedure)
+       [dbo].[AllCity] (Procedure)
+       [dbo].[AircompWithPlanes] (Procedure)
+       [dbo].[CountTickets] (Procedure)
+
+The object [KrisDemyda] already exists in database with a different definition and will not be altered.
+The object [NazarHolub] already exists in database with a different definition and will not be altered.
+

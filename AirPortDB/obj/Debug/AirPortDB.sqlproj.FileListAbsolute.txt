@@ -1,0 +1,11 @@
+d:\Users\dackayne\Desktop\airportProject\airport\AirPortDB\bin\Debug\AirPortDB.dacpac
+d:\Users\dackayne\Desktop\airportProject\airport\AirPortDB\bin\Debug\AirPortDB.dll
+d:\Users\dackayne\Desktop\airportProject\airport\AirPortDB\bin\Debug\AirPortDB.pdb
+d:\Users\dackayne\Desktop\airportProject\airport\AirPortDB\obj\Debug\AirPortDB.dll
+d:\Users\dackayne\Desktop\airportProject\airport\AirPortDB\obj\Debug\AirPortDB.pdb
+d:\Users\dackayne\Desktop\airportProject\airport\AirPortDB\obj\Debug\AirPortDB.sqlprojAssemblyReference.cache
+D:\users\dackayne\Desktop\courseWork\airportProject\airport\AirPortDB\bin\Debug\AirPortDB.dacpac
+D:\users\dackayne\Desktop\courseWork\airportProject\airport\AirPortDB\obj\Debug\AirPortDB.dll
+D:\users\dackayne\Desktop\courseWork\airportProject\airport\AirPortDB\obj\Debug\AirPortDB.pdb
+D:\users\dackayne\Desktop\courseWork\airportProject\airport\AirPortDB\bin\Debug\AirPortDB.dll
+D:\users\dackayne\Desktop\courseWork\airportProject\airport\AirPortDB\bin\Debug\AirPortDB.pdb

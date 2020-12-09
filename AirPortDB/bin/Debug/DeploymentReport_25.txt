@@ -1,0 +1,38 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[Flight] (Table)
+     Refresh
+       [dbo].[DeleteFlight] (Procedure)
+       [dbo].[GetFlight] (Procedure)
+       [dbo].[InsertFlight] (Procedure)
+       [dbo].[SelectFlights] (Procedure)
+       [dbo].[UpdateFlight] (Procedure)
+
+** Supporting actions
+     Refresh
+       [dbo].[Buy] (View)
+       [dbo].[FlightsAndEvents] (View)
+       [dbo].[UnexpEv] (View)
+       [dbo].[Buyers] (Procedure)
+       [dbo].[FlightsByCity] (Procedure)
+       [dbo].[FlightsByCountry] (Procedure)
+       [dbo].[FlightsWithEvents] (Procedure)
+       [dbo].[FutureFlights] (Procedure)
+       [dbo].[Passeng] (Procedure)
+       [dbo].[PastFlights] (Procedure)
+       [dbo].[TotalCost] (Procedure)
+       [dbo].[UEvents] (Procedure)
+
+The object [KrisDemyda] already exists in database with a different definition and will not be altered.
+The object [NazarHolub] already exists in database with a different definition and will not be altered.
+

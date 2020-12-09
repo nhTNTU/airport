@@ -1,0 +1,1 @@
+﻿CREATE USER "VovaVasilishin" FOR LOGIN "VovaVasilishin";

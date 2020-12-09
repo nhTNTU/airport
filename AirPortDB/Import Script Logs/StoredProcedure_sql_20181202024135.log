@@ -1,0 +1,13 @@
+12/2/2018 4:41:35 PM	This log contains information about the import operation of the script 'StoredProcedure.sql' into project 'AirPortDB' on computer 'WATSON' by user'dackayne.
+12/2/2018 4:41:37 PM	Started importing file: C:\Users\dackayne\AppData\Local\Temp\tmp1CC7.tmp 
+12/2/2018 4:41:37 PM	File name C:\Users\dackayne\AppData\Local\Temp\tmp1CC7.tmp (size: 57423)
+12/2/2018 4:41:37 PM	Parsing import script
+12/2/2018 4:41:37 PM	Total number of batches in script: 84
+12/2/2018 4:41:37 PM	Total number of statements in script: 94
+12/2/2018 4:41:37 PM	The script was successfully imported into the project.
+12/2/2018 4:41:37 PM	Analyzing schema objects...
+12/2/2018 4:41:37 PM	Scanning project for duplicate elements
+12/2/2018 4:41:37 PM	Finished duplicate element processing
+12/2/2018 4:41:39 PM	In the script that you provided to the import operation, one or more statements were not fully understood. These statements were moved to the ScriptsIgnoredOnImport.sql file. Review the file contents for additional information.
+12/2/2018 4:41:39 PM	A summary of the import was saved to the following location: d:\Users\dackayne\Desktop\airportProject\airport\AirPortDB\Import Script Logs\StoredProcedure_sql_20181202024135.log
+12/2/2018 4:41:39 PM	Click Finish to continue...

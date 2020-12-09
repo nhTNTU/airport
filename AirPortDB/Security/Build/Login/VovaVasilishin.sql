@@ -1,0 +1,1 @@
+﻿CREATE LOGIN "VovaVasilishin" WITH PASSWORD = 'root';

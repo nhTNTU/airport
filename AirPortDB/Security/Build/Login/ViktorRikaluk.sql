@@ -1,0 +1,1 @@
+﻿CREATE LOGIN "ViktorRikaluk" WITH PASSWORD = 'root';

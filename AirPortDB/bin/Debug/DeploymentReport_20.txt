@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[SelectAirPortList] (Procedure)
+
+** Supporting actions
+
+The object [KrisDemyda] already exists in database with a different definition and will not be altered.
+The object [NazarHolub] already exists in database with a different definition and will not be altered.
+

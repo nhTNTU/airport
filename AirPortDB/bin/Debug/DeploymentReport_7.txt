@@ -1,0 +1,45 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Aircompany]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Aircompany] (Table)
+     Refresh
+       [dbo].[AircompanyDelete] (Procedure)
+       [dbo].[AircompanySelect] (Procedure)
+       [dbo].[AircompanyUpdate] (Procedure)
+       [dbo].[AirсompanyInsert] (Procedure)
+       [dbo].[SelectAirplaneList] (Procedure)
+       [dbo].[SelectFlights] (Procedure)
+       [dbo].[SelectRefAircompaniesList] (Procedure)
+       [dbo].[SelectRefPlaneList] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[Flight_Aircompany_FK] (Foreign Key)
+       [dbo].[Plane_Aircompany_FK] (Foreign Key)
+     Create
+       [dbo].[Flight_Aircompany_FK] (Foreign Key)
+       [dbo].[Plane_Aircompany_FK] (Foreign Key)
+     Refresh
+       [dbo].[FlightsAndEvents] (View)
+       [dbo].[UnexpEv] (View)
+       [dbo].[AircompWithPlanes] (Procedure)
+       [dbo].[FlightsByCity] (Procedure)
+       [dbo].[FlightsByCountry] (Procedure)
+       [dbo].[FlightsWithEvents] (Procedure)
+       [dbo].[FutureFlights] (Procedure)
+       [dbo].[Passeng] (Procedure)
+       [dbo].[PastFlights] (Procedure)
+       [dbo].[UEvents] (Procedure)
+
+The object [KrisDemyda] already exists in database with a different definition and will not be altered.
+The object [NazarHolub] already exists in database with a different definition and will not be altered.
+

@@ -1,0 +1,47 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[City]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[City] (Table)
+     Refresh
+       [dbo].[CityDelete] (Procedure)
+       [dbo].[CityInsert] (Procedure)
+       [dbo].[CityUpdate] (Procedure)
+       [dbo].[GetCity] (Procedure)
+       [dbo].[RefSelectCitiesListByID] (Procedure)
+       [dbo].[SelectAirPortList] (Procedure)
+       [dbo].[SelectCitiesList] (Procedure)
+       [dbo].[SelectFlights] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[AirPort_City_FK] (Foreign Key)
+       [dbo].[City_Country_FK] (Foreign Key)
+     Create
+       [dbo].[AirPort_City_FK] (Foreign Key)
+       [dbo].[City_Country_FK] (Foreign Key)
+     Refresh
+       [dbo].[allCityCountry] (View)
+       [dbo].[FlightsAndEvents] (View)
+       [dbo].[UnexpEv] (View)
+       [dbo].[AllCity] (Procedure)
+       [dbo].[FlightsByCity] (Procedure)
+       [dbo].[FlightsByCountry] (Procedure)
+       [dbo].[FlightsWithEvents] (Procedure)
+       [dbo].[FutureFlights] (Procedure)
+       [dbo].[Passeng] (Procedure)
+       [dbo].[PastFlights] (Procedure)
+       [dbo].[UEvents] (Procedure)
+
+The object [KrisDemyda] already exists in database with a different definition and will not be altered.
+The object [NazarHolub] already exists in database with a different definition and will not be altered.
+The column city_population on table [dbo].[City] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+
